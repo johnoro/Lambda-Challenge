@@ -6,9 +6,7 @@ After writing your function uncomment the matching function reference at the bot
 
 // 1. Write a function called helloWorld that returns the string 'Hello World!'.
 
-function helloWorld() {
-
-}
+const helloWorld = () => 'Hello World!';
 
 /*
 2. Write a function called lambdaSchool that has a single parameter called num.
@@ -23,9 +21,8 @@ function helloWorld() {
              lambdaSchool(8); // returns 8
 */
 
-function lambdaSchool() {
-
-}
+const l = 'Lambda', s = 'School';
+const lambdaSchool = n => n % 15 ? n % 3 ? n % 5 ? n : s : l : `${s} ${l}`;
 
 /*
 3. Write a function called longestString that has a single parameter called strs.
@@ -38,9 +35,7 @@ function lambdaSchool() {
              longestString(['JavaScript', 'HTML', 'CSS']); // returns 'JavaScript'
 */
 
-function longestString() {
-
-}
+const longestString = a => a.reduce((a, b) => a.length >= b.length ? a : b);
 
 /*
 4. Write a function called computeUserAverageAge that has a single parameter called users
@@ -63,9 +58,7 @@ function longestString() {
              computeUserAverageAge(users); // returns 62 (This number is rounded up from 61.6666)
 */
 
-function computeUserAverageAge() {
-
-}
+const computeUserAverageAge = a => Math.round(a.reduce((r, { age }) => r + age, 0) / a.length);
 
 module.exports = {
  helloWorld,
